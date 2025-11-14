@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAFEDON - Cemento de Calidad en Andalucía</title>
+    <meta name="description" content="MAFEDON, empresa líder en producción de cemento en Andalucía. Calidad, innovación y sostenibilidad desde Córdoba.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/MAFEDON.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo" onclick="showPage('home')">
+                <div class="logo-container">
+                    <img src="assets/mafedon.png" alt="Logo MAFEDON" class="logo-img">
+                    <span class="logo-text">
+                        <span style="color: rgb(45, 45, 210);">MA</span><span style="color: var(--secondary);">FE</span><span style="color: var(--accent);">DON</span>
+                    </span>
+                </div>
+            </a>
+            <nav id="mainNav">
+                <a href="#" onclick="showPage('home')">Inicio</a>
+                <a href="#" onclick="showPage('quienes-somos')">Quiénes somos</a>
+                <a href="#" onclick="showPage('productos')">Productos</a>
+                <a href="#" onclick="showPage('innovacion')">Innovación & Sostenibilidad</a>
+                <a href="#" onclick="showPage('contacto')" class="cta-header">Contacto</a>
+            </nav>
+            <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+
+    <!-- Página Home -->
+    <div id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>El cemento que construye el futuro</h1>
+                <p>Calidad y sostenibilidad al servicio de Andalucía</p>
+                <a href="#" onclick="showPage('quienes-somos')" class="btn-primary">Conoce más sobre nosotros</a>
+            </div>
+        </section>
+
+        <!-- Valores -->
+        <section class="valores">
+            <div class="container">
+                <h2 class="section-title">Nuestros Valores</h2>
+                <div class="valores-grid">
+                    <div class="valor-card">
+                        <div class="valor-icon">🏢</div>
+                        <h3>Confianza</h3>
+                        <p>Décadas de experiencia respaldando cada proyecto con solidez y profesionalidad.</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon">🌱</div>
+                        <h3>Sostenibilidad</h3>
+                        <p>Comprometidos con el medio ambiente, innovando en procesos ecológicos y responsables.</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon">💡</div>
+                        <h3>Innovación</h3>
+                        <p>Tecnología de vanguardia para ofrecer productos que superan los estándares del sector.</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon">👥</div>
+                        <h3>Compromiso</h3>
+                        <p>Cuidamos a nuestro equipo de 24 profesionales con un estilo de gestión participativo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos -->
+        <section class="productos">
+            <div class="container">
+                <h2 class="section-title">Nuestros Productos</h2>
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <div class="producto-img cemento-portland">
+                            <img src="assets/cemento_Portland.jpg" alt="">
+                        </div>
+                        <div class="producto-content">
+                            <h3>Cemento Portland</h3>
+                            <p>Cemento de uso general con excelente resistencia y durabilidad para todo tipo de construcciones.</p>
+                            <a href="#" onclick="showPage('productos')" class="btn-secondary">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <div class="producto-img cemento-blanco">
+                            <img src="assets/cemento_Blanco.jpg" alt="">
+                        </div>
+                        <div class="producto-content">
+                            <h3>Cemento Blanco</h3>
+                            <p>Ideal para acabados estéticos y arquitectónicos que requieren alta calidad visual.</p>
+                            <a href="#" onclick="showPage('productos')" class="btn-secondary">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <div class="producto-img cemento-ecologico">
+                            <img src="assets/cemento_Ecologico.jpg" alt="">
+                        </div>
+                        <div class="producto-content">
+                            <h3>Cemento Ecológico</h3>
+                            <p>Producción sostenible con menor huella de carbono, sin comprometer la calidad.</p>
+                            <a href="#" onclick="showPage('productos')" class="btn-secondary">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Home - Sección Innovación -->
+        <section class="innovacion">
+            <div class="container">
+                <div class="innovacion-content">
+                    <div class="innovacion-text">
+                        <h2>Innovación y Sostenibilidad</h2>
+                        <p>En MAFEDON estamos comprometidos con el futuro. Implementamos tecnologías avanzadas para reducir nuestra huella ambiental, optimizamos el uso de recursos y reciclamos materiales en nuestros procesos.</p>
+                        <p>Nuestras instalaciones cuentan con sistemas de eficiencia energética y utilizamos combustibles alternativos para minimizar las emisiones de CO₂.</p>
+                        <a href="#" onclick="showPage('innovacion')" class="btn-primary">Descubre más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="testimonios">
+            <div class="container">
+                <h2 class="section-title">Lo que dicen de nosotros</h2>
+                <div class="testimonios-grid">
+                    <div class="testimonio-card">
+                        <div class="testimonio-header">
+                            <div class="testimonio-avatar empleado-mj"></div>
+                            <div class="testimonio-info">
+                                <h4>María José López</h4>
+                                <p>Jefa de Producción</p>
+                            </div>
+                        </div>
+                        <p class="testimonio-quote">"Trabajar en MAFEDON es formar parte de una familia. El ambiente participativo y el compromiso con nuestro bienestar hacen que cada día sea motivador."</p>
+                    </div>
+                    <div class="testimonio-card">
+                        <div class="testimonio-header">
+                            <div class="testimonio-avatar empleado-cr"></div>
+                            <div class="testimonio-info">
+                                <h4>Carlos Ramírez</h4>
+                                <p>Director de Obra</p>
+                            </div>
+                        </div>
+                        <p class="testimonio-quote">"La calidad del cemento MAFEDON es excepcional. Hemos usado sus productos en múltiples proyectos y siempre cumplen con los más altos estándares."</p>
+                    </div>
+                    <div class="testimonio-card">
+                        <div class="testimonio-header">
+                            <div class="testimonio-avatar empleado-ag"></div>
+                            <div class="testimonio-info">
+                                <h4>Ana Gómez</h4>
+                                <p>Ingeniera de Sostenibilidad</p>
+                            </div>
+                        </div>
+                        <p class="testimonio-quote">"MAFEDON lidera la innovación sostenible en el sector. Su compromiso con el medio ambiente no es solo palabras, sino acciones concretas."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página Quiénes Somos -->
+    <div id="quienes-somos" class="page">
+        <div class="page-header">
+            <div class="container">
+                <h1>Quiénes Somos</h1>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="container">
+                <h2>Nuestra Historia</h2>
+                <p>MAFEDON nace del sueño compartido de tres socios con amplia experiencia en la industria cementera. Ubicados en Córdoba, hemos crecido hasta convertirnos en un referente de calidad y compromiso en toda Andalucía.</p>
+                <p>Como PYME con 24 empleados, mantenemos la cercanía y el trato personalizado que nos caracteriza, sin renunciar a la excelencia y profesionalidad que demanda el sector.</p>
+
+                <h2 style="margin-top: 3rem;">Nuestros Fundadores</h2>
+                <div class="socios-grid">
+                    <div class="socio-card">
+                        <div class="socio-img">
+                            <img src="assets/Alvaro.jpg" alt="Alvaro">
+                        </div>
+                        <h3>Álvaro Marinas</h3>
+                        <p>Cofundador y Director General</p>
+                    </div>
+                    <div class="socio-card">
+                        <div class="socio-img">
+                            <img src="assets/Jero.jpg" alt="Jeronimo">
+                        </div>
+                        <h3>Jerónimo Donoso</h3>
+                        <p>Cofundador y Director Técnico</p>
+                    </div>
+                    <div class="socio-card empleado-mes">
+                        <div class="empleado-mes-badge">⭐ EMPLEADO DEL MES</div>
+                        <div class="socio-img">
+                            <img src="assets/fran_Empleado.jpeg" alt="Fran">
+                        </div>
+                        <h3>Francisco Fernandez</h3>
+                        <p>Supervisor de Control de Calidad</p>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem; font-style: italic;">"Su dedicación y excelencia han sido ejemplares este mes"</p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 3rem;">Filosofía Empresarial</h2>
+                <p>En MAFEDON creemos en un modelo de gestión participativo donde cada empleado es valorado y escuchado. Nuestra estructura organizativa fomenta la comunicación abierta y el trabajo en equipo.</p>
+                <p>Operamos en toda Andalucía, llevando nuestros productos de calidad a cada rincón de la región, manteniendo siempre nuestro compromiso con la excelencia y la sostenibilidad.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página Productos -->
+    <div id="productos" class="page">
+        <div class="page-header">
+            <div class="container">
+                <h1>Nuestros Productos</h1>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="container">
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <div class="producto-img">
+                            <img src="assets/cemento_Portland.jpg" alt="Cemento Ecológico MAFEDON">
+                        </div>
+                        <div class="producto-content">
+                            <h3>Cemento Portland</h3>
+                            <p><strong>Especificaciones:</strong></p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li>Resistencia: 42.5 MPa</li>
+                                <li>Fraguado: Rápido</li>
+                                <li>Aplicaciones: Hormigón armado, prefabricados</li>
+                            </ul>
+                            <p>Ideal para construcciones que requieren alta resistencia inicial y durabilidad excepcional.</p>
+                            <a href="#" onclick="showPage('contacto')" class="btn-secondary">Solicitar presupuesto</a>
+                        </div>
+                    </div>
+
+                    <div class="producto-card">
+                        <div class="producto-img">
+                            <img src="assets/cemento_Blanco.jpg" alt="Cemento Ecológico MAFEDON">
+                        </div>
+                        <div class="producto-content">
+                            <h3>Cemento Blanco</h3>
+                            <p><strong>Especificaciones:</strong></p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li>Resistencia: 52.5 MPa</li>
+                                <li>Color: Blanco brillante</li>
+                                <li>Aplicaciones: Acabados arquitectónicos, decoración</li>
+                            </ul>
+                            <p>Perfecto para proyectos donde la estética es fundamental, con acabados de alta calidad visual.</p>
+                            <a href="#" onclick="showPage('contacto')" class="btn-secondary">Solicitar presupuesto</a>
+                        </div>
+                    </div>
+
+                    <div class="producto-card">
+                        <div class="producto-img">
+                            <img src="assets/cemento_Ecologico.jpg" alt="Cemento Ecológico MAFEDON">
+                        </div>
+                        <div class="producto-content">
+                            <h3>Cemento Ecológico</h3>
+                            <p><strong>Especificaciones:</strong></p>
+                            <ul>
+                                <li>Resistencia: 42.5 MPa</li>
+                                <li>Reducción CO₂: 30%</li>
+                                <li>Aplicaciones: Construcción sostenible</li>
+                            </ul>
+                            <p>Nuestro compromiso con el medio ambiente sin sacrificar calidad ni rendimiento.</p>
+                            <a href="#" onclick="showPage('contacto')" class="btn-secondary">Solicitar presupuesto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página Innovación -->
+    <div id="innovacion" class="page">
+        <div class="page-header">
+            <div class="container">
+                <h1>Innovación y Sostenibilidad</h1>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="container">
+                <h2>Nuestro Compromiso con el Medio Ambiente</h2>
+                <p>En MAFEDON, la sostenibilidad no es una opción, es nuestra responsabilidad. Hemos implementado múltiples iniciativas para reducir nuestro impacto ambiental:</p>
+
+                <div class="valores-grid" style="margin: 3rem 0;">
+                    <div class="valor-card">
+                        <div class="valor-icon">♻️</div>
+                        <h3>Economía Circular</h3>
+                        <p>Reciclamos subproductos industriales y utilizamos materias primas alternativas en un 25% de nuestra producción.</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon">⚡</div>
+                        <h3>Eficiencia Energética</h3>
+                        <p>Sistemas de última generación que reducen el consumo energético en un 40% respecto a métodos tradicionales.</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon">🌍</div>
+                        <h3>Reducción de CO₂</h3>
+                        <p>Hemos reducido nuestras emisiones en un 35% mediante combustibles alternativos y optimización de procesos.</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon">🔬</div>
+                        <h3>I+D+i</h3>
+                        <p>Investigación constante en nuevos materiales y procesos más sostenibles y eficientes.</p>
+                    </div>
+                </div>
+
+                <h2>Innovación Tecnológica</h2>
+                <p>Nuestras instalaciones cuentan con:</p>
+                <ul style="margin: 1rem 0 2rem 2rem; line-height: 2;">
+                    <li>Sistemas de control automatizado para optimización de procesos</li>
+                    <li>Tecnología de molienda eficiente de última generación</li>
+                    <li>Filtros de mangas de alta eficiencia para control de emisiones</li>
+                    <li>Sistemas de recuperación de calor</li>
+                    <li>Laboratorio propio con equipamiento de análisis avanzado</li>
+                </ul>
+
+                <h2>Certificaciones</h2>
+                <p>Nuestro compromiso con la calidad y sostenibilidad está avalado por certificaciones internacionales que garantizan el cumplimiento de los más altos estándares del sector.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página Contacto -->
+    <div id="contacto" class="page">
+        <div class="page-header">
+            <div class="container">
+                <h1>Contacto</h1>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Información de Contacto</h2>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Dirección:</strong><br>
+                                Polígono Industrial El Higuerón<br>
+                                Calle Cemento, 24<br>
+                                14014 Córdoba, España
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>Teléfono:</strong><br>
+                                +34 111 111 111
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <strong>Email:</strong><br>
+                                info.mafedon@gmail.es<br>
+                                comercial.mafedon@gmail.es
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div>
+                                <strong>Horario:</strong><br>
+                                Lunes a Viernes: 8:00 - 18:00<br>
+                                Sábados: 8:00 - 14:00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <h2>Ubicación</h2>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.347576090287!2d-4.782722684692706!3d37.88839797984705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d207e8bf3dc7b%3A0x4f8f4f3d5b8b8b8b!2sC%C3%B3rdoba%2C%20Spain!5e0!3m2!1sen!2ses!4v1612345678901!5m2!1sen!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 style="text-align: center; margin-bottom: 2rem;">Envíanos un mensaje</h2>
+                <div class="success-message" id="successMessage">
+                    ✓ Mensaje enviado correctamente. Nos pondremos en contacto contigo pronto.
+                </div>
+                <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <span class="error-message" id="nombreError">Por favor, introduce tu nombre</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError">Por favor, introduce un email válido</span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9,15}">
+                            <span class="error-message" id="telefonoError">Por favor, introduce un teléfono válido (9-15 dígitos)</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                        <span class="error-message" id="asuntoError">Por favor, introduce el asunto</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                        <span class="error-message" id="mensajeError">Por favor, escribe tu mensaje</span>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MAFEDON</h3>
+                    <p>Cemento de calidad desde Córdoba para toda Andalucía.</p>
+                    <p style="margin-top: 1rem;">Fundada en 1969</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Accesos Rápidos</h3>
+                    <a href="#" onclick="showPage('home')">Inicio</a>
+                    <a href="#" onclick="showPage('quienes-somos')">Quiénes somos</a>
+                    <a href="#" onclick="showPage('productos')">Productos</a>
+                    <a href="#" onclick="showPage('innovacion')">Innovación</a>
+                    <a href="#" onclick="showPage('contacto')">Contacto</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Productos</h3>
+                    <a href="#" onclick="showPage('productos')">Cemento Portland</a>
+                    <a href="#" onclick="showPage('productos')">Cemento Blanco</a>
+                    <a href="#" onclick="showPage('productos')">Cemento Ecológico</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 MAFEDON - Todos los derechos reservados | Diseñado con compromiso sostenible</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
